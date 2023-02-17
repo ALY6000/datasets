@@ -1,0 +1,42 @@
+Prepare your response with the following R code.
+
+PROMPT 1: Show your interpretation of the commands below by adding a comment to each.
+
+PROMPT 2: Modify the contents so they summarize some of the data points in your TWO reviews
+
+
+
+
+# Source: (Toby, ALY6000, Canvas)   # as your name is not Toby, please revise the citation note as well
+if ( !exists('salaries') )
+{
+  reviews <- list()
+}  
+
+
+rationale1<-'I rated this because...'
+rationale2<-'I rated this because...'
+rationale3<-'I rated this because...'
+
+
+rev<-c(  'Tuscany', 'Titanic.csv', 'Tourism.csv', '12:12', 4L, 6L, 2L, rationale1, 5L, rationale2, 5.5, rationale3, 'Toby' )
+df<-data.frame( t( rev ) )
+colnames(df) <- c('Presenter', 'PartA-Dataset', 'PartB-Dataset',  'Video length (mm:ss)', 'L lessons shown', 'Q involved old materials', 'Rate1', 'Rationale on rate1', 'Rate2', 'Rationale on rate2', 'Rate3', 'Rationale on rate3', 'info_source' )
+
+
+rev2<-c(  'Tina', 'Transmissions.csv', 'Transmissions.csv', '12:12', 4L, 6L, 2L, rationale1, 5L, rationale2, 5.5, rationale3, 'Toby' )
+df[2,]<-t( rev2 )   
+
+
+reviews[[ 'Toby' ]] <- df
+reviews[[ 'Toby' ]]
+
+
+
+ 
+
+Take-home quiz: how would you merge the data frames created from D5 and D6?
+
+Here is the Colab notebook where you will add your proposed solution.  
+
+However, if you are unsure of your proposed solution, please leave them commented out for your instructor to check so your work does not disrupt your peers' workflow.
